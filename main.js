@@ -1,5 +1,3 @@
-// main.js
-
 // Smooth scrolling for anchor links
 document.querySelectorAll('nav a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -52,3 +50,9 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// فتح/إغلاق القائمة الجانبية على الموبايل
+function toggleMobileMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("open");
+}
