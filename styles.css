@@ -1,17 +1,19 @@
+
 /* الأساسيات */
 body {
-  background-color: #1c1c1c;
-  color: #fff;
+  background-color: #0f0f1a;
+  color: #ffffff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #292929;
+  background: linear-gradient(90deg, #0f0f4d, #3a0ca3, #4361ee);
   padding: 20px;
   text-align: center;
-  border-bottom: 2px solid #ff4747;
+  border-bottom: 2px solid #00f0ff;
+  box-shadow: 0 0 20px #3a0ca3;
 }
 
 header img {
@@ -23,8 +25,9 @@ header img {
 
 header h1 {
   margin: 0;
-  color: #ff4747;
+  color: #00f0ff;
   font-size: clamp(24px, 5vw, 32px);
+  text-shadow: 0 0 10px #00f0ff;
 }
 
 nav {
@@ -32,33 +35,35 @@ nav {
 }
 
 nav a {
-  color: #ddd;
+  color: #e0e0ff;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
   font-size: clamp(14px, 2.5vw, 18px);
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav a:hover {
-  color: #ff4747;
+  color: #7df9ff;
+  text-shadow: 0 0 5px #00f0ff;
 }
 
 section {
   padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
-  background-color: #252525;
+  background-color: #1a1a2e;
   border-radius: 10px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 15px #3a0ca3;
   box-sizing: border-box;
 }
 
 h2 {
-  color: #ff4747;
+  color: #7df9ff;
   font-size: clamp(20px, 4vw, 28px);
   margin-bottom: 20px;
   text-align: center;
+  text-shadow: 0 0 8px #00f0ff;
 }
 
 p, li {
@@ -75,13 +80,13 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  background-color: #2e2e2e;
+  background-color: #202040;
   border-radius: 10px;
   overflow: hidden;
 }
 
 table, th, td {
-  border: 1px solid #444;
+  border: 1px solid #555;
 }
 
 th, td {
@@ -91,18 +96,20 @@ th, td {
 }
 
 th {
-  background-color: #ff4747;
-  color: #fff;
+  background-color: #3a0ca3;
+  color: #ffffff;
+  text-shadow: 0 0 5px #00f0ff;
 }
 
 footer {
-  background-color: #292929;
+  background-color: #151527;
   padding: 20px;
   text-align: center;
   font-size: 16px;
-  border-top: 2px solid #ff4747;
+  border-top: 2px solid #00f0ff;
   margin-top: 40px;
   color: #ccc;
+  box-shadow: 0 -5px 20px #3a0ca3;
 }
 
 img.service-logo,
@@ -149,21 +156,11 @@ img {
   transform: scale(1.05);
 }
 
-/* لو الشاشة صغيرة جدًا (موبايل قديم) */
-@media screen and (max-width: 480px) {
-  .whatsapp-button {
-    padding: 10px 15px;
-    font-size: 14px;
-    bottom: 15px;
-    right: 15px;
-  }
-}
-
 /* زر القائمة للموبايل */
 .mobile-menu-button {
   display: none;
   font-size: 30px;
-  color: #fff;
+  color: #00f0ff;
   background: none;
   border: none;
   cursor: pointer;
@@ -173,14 +170,13 @@ img {
   z-index: 1001;
 }
 
-/* القائمة الجانبية للموبايل */
 .mobile-menu {
   position: fixed;
   top: 0;
   right: -100%;
   width: 250px;
   height: 100%;
-  background-color: #292929;
+  background-color: #202040;
   box-shadow: -2px 0 10px rgba(0,0,0,0.7);
   padding: 20px;
   transition: right 0.3s ease;
@@ -201,13 +197,13 @@ img {
 }
 
 .mobile-menu a:hover {
-  color: #ff4747;
+  color: #7df9ff;
 }
 
 .mobile-menu .close-menu {
   font-size: 24px;
   font-weight: bold;
-  color: #ff4747;
+  color: #ff4f91;
   cursor: pointer;
   text-align: right;
   margin-bottom: 20px;
