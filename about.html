@@ -5,15 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>عنّا | A&T Store</title>
   <link rel="stylesheet" href="styles.css">
-  <a href="https://wa.me/201096077001" class="whatsapp-button" target="_blank" title="راسلنا على واتساب">
-  💬 تواصل واتساب
-</a>
-<button class="mobile-menu-button" onclick="toggleMenu()">&#9776;</button>
-
 </head>
 <body>
   <header>
-    <img src="https://lh5.googleusercontent.com/42Qzp4AAK0O9MyzMeDBhU0oO1NCCC76c36qtGAOSHLPhp65RkiBIURUmFm2jdOKXmrcjg9EG0SD7u199jj3WZs24UPLjG4o9BtflJRYRJbRJMcu2lrO3FLCOCjtYdZ_EOuoUfLXiDu8=w1280" alt="شعار A&T" class="service-logo">
+    <img src="https://lh3.googleusercontent.com/ojbvVM2OuhxXHOtkJJIuoM34KesqZ7E1N9tn_Ol0YpTWbJNqD9YF1A5LHwY-W8SFnA8qECEheNX7x15ATce5VMN0poo2SaXqmNvtMrNENxjvE6LqK9v2onnIY7FSb-xIb-JWd491kpo=w1280" alt="شعار A&T" class="service-logo">
     <h1>عن A&T Store</h1>
     <nav>
       <a href="index.html">الرئيسية</a>
@@ -39,7 +34,24 @@
   <footer>
     تواصل معنا على واتساب: 01096077001 — جميع الحقوق محفوظة © A&T 2025
   </footer>
-  <script src="main.js"></script>
 
+  <!-- زر واتساب + زر القائمة الجانبية -->
+  <a href="https://wa.me/201096077001" class="whatsapp-button" target="_blank" title="راسلنا على واتساب">
+    💬 تواصل واتساب
+  </a>
+
+  <button class="mobile-menu-button" onclick="toggleMobileMenu()">☰</button>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="close-menu" onclick="toggleMobileMenu()">✖</div>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">عنّا</a>
+    <a href="pubg.html">ببجي</a>
+    <a href="freefire.html">فري فاير</a>
+    <a href="steam.html">ستيم</a>
+    <a href="contact.html">تواصل</a>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>

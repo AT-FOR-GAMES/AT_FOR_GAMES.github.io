@@ -5,15 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>شدات ببجي | A&T</title>
   <link rel="stylesheet" href="styles.css">
-  <a href="https://wa.me/201096077001" class="whatsapp-button" target="_blank" title="راسلنا على واتساب">
-  💬 تواصل واتساب
-</a>
-<button class="mobile-menu-button" onclick="toggleMenu()">&#9776;</button>
-
 </head>
 <body>
   <header>
-    <img src="https://lh4.googleusercontent.com/Oays2Du4ExOsIa4AFoRls90-3SLaPy5rWd9kp63E0TbEPnrU-FNivkCAX7xGWCTPttobnKxJ79U4KWXSkUnAcxWqo6vTHSlCzA_u8Ptw0lGaywkJLVQI6P1NqKkBayfqYh2BZ9Wm20w=w1280" alt="ببجي شعار" class="service-logo">
+    <img src="https://lh4.googleusercontent.com/5YIL7eT-nFFW6tb4_fRVIG0pU7IXXdJKqgYoCSwXE7WnfETRaLJcdYHg1garDHBFU-i-288rBvGohFVaEluJ_AzadALjY6q5atfJZOIXw-Ts-nDrn12QjGDXXxHZegDMFsQ5He0ALEA=w1280" alt="ببجي شعار" class="service-logo">
     <h1>شحن شدات ببجي</h1>
     <nav>
       <a href="index.html">الرئيسية</a>
@@ -50,7 +45,24 @@
   <footer>
     للتواصل وشراء الشدات عبر واتساب: 01096077001
   </footer>
-  <script src="main.js"></script>
 
+  <!-- زر واتساب + القائمة الجانبية -->
+  <a href="https://wa.me/201096077001" class="whatsapp-button" target="_blank" title="راسلنا على واتساب">
+    💬 تواصل واتساب
+  </a>
+
+  <button class="mobile-menu-button" onclick="toggleMobileMenu()">☰</button>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="close-menu" onclick="toggleMobileMenu()">✖</div>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">عنّا</a>
+    <a href="pubg.html">ببجي</a>
+    <a href="freefire.html">فري فاير</a>
+    <a href="steam.html">ستيم</a>
+    <a href="contact.html">تواصل</a>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
