@@ -1,0 +1,224 @@
+/* الأساسيات */
+body {
+  background-color: #1c1c1c;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #292929;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ff4747;
+}
+
+header img {
+  max-height: 80px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: auto;
+}
+
+header h1 {
+  margin: 0;
+  color: #ff4747;
+  font-size: clamp(24px, 5vw, 32px);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: clamp(14px, 2.5vw, 18px);
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4747;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #252525;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #ff4747;
+  font-size: clamp(20px, 4vw, 28px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: square;
+  padding-right: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table, th, td {
+  border: 1px solid #444;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
+th {
+  background-color: #ff4747;
+  color: #fff;
+}
+
+footer {
+  background-color: #292929;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  border-top: 2px solid #ff4747;
+  margin-top: 40px;
+  color: #ccc;
+}
+
+img.service-logo,
+img {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+}
+
+/* زر واتساب ثابت */
+.whatsapp-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 999;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* لو الشاشة صغيرة جدًا (موبايل قديم) */
+@media screen and (max-width: 480px) {
+  .whatsapp-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* زر القائمة للموبايل */
+.mobile-menu-button {
+  display: none;
+  font-size: 30px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  z-index: 1001;
+}
+
+/* القائمة الجانبية للموبايل */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #292929;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.7);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 15px 0;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  color: #ff4747;
+}
+
+.mobile-menu .close-menu {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4747;
+  cursor: pointer;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu-button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+}
